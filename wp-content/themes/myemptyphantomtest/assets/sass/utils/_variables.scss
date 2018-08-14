@@ -1,0 +1,29 @@
+// :::::::::: variables ::::::::::
+
+// Colors
+$white: #FFFFFF;
+$black: #252525;
+
+// Fonts
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+// Weights
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+/// @see {mixin} respond-to
+$breakpoints: (
+	'b-950': (max-width: 950px),
+	'row': (max-width: 1020px),
+);
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///	 $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
